@@ -1,0 +1,15 @@
+.connexion{
+    padding-left: 750px;
+}
+.carousel-item{
+    height: 500;
+} 
+.carousel-item img{
+    height: 500px;
+}
+h4{
+    position:relative;
+    top:20px;
+    width:100%;
+    text-align: center;
+}

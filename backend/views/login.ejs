@@ -1,0 +1,20 @@
+<%- include('navbar') %>
+<div id="loginContainer">
+<h1>Se connecter</h1>
+<p id="errorLogin">
+<% if( locals.msg!="undefined"){ %>
+<%=locals.msg %>
+<% } %>
+</p>
+<form method="POST" >
+    <div>
+        <input type="email" id="email" name="email"placeholder="E-mail">
+    </div>
+    <div>
+        <input type="password" id="password" name="password"placeholder="Mot de passe">
+        
+    </div>
+    <button id="loginBut" type="submit">Se connecter</button><br>
+    <a id="linkRegister" href="register">Pas de compte ? Inscrivez vous</a>
+</form>
+</div>

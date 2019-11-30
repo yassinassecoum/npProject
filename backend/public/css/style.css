@@ -1,0 +1,91 @@
+body{
+    background-color:#379683;
+}
+.nav-item{
+    width:100%;
+    margin-left: 10%;
+
+}
+.nav-link{
+    color:rgb(5, 7, 42);
+    text-transform:uppercase;
+    font-size:22px;
+    text-align:center;
+    white-space: nowrap;
+}
+.dropdown-item{
+    font-size:18px;
+}
+.dropdown-item:hover{
+    background-color: #5CDB95;
+   
+}
+.navbar-nav > li > .dropdown-menu { background-color:#379683 ; }
+
+#butConnect{
+    background-color: #05386B;
+    border:1px solid;
+    border-radius: 5%;
+}
+#textBut{
+    color:white;
+}
+#welcomeMsg,#readyMsg{
+    text-align:center;
+}
+#registerContainer{
+    position: relative;
+    left:35%;
+    width:400px;
+    height:420px;
+    background-color:#05386B;
+    text-align: center;
+    border-radius:5%;
+}
+#registerContainer>h1{
+    padding-top:15px;
+    margin:15px;
+    color:#5CDB95;
+}
+input{
+    margin-top: 20px;
+    border-radius:5%;
+    
+}
+#registerBut{
+    margin-top:15px;
+    border-radius:5%;
+    background-color: #5CDB95;
+    color:white;
+}
+#linkLogin,#linkRegister{
+    position:relative;
+    top:30px;
+    color:white;
+}
+#errorRegister{
+    color:red;
+}
+#errorLogin{
+    color:red;
+}
+#loginContainer{
+    position: relative;
+    left:35%;
+    width:400px;
+    height:420px;
+    background-color:#05386B;
+    text-align: center;
+    border-radius:5%;
+}
+#loginContainer>h1{
+    padding-top:15px;
+    margin:15px;
+    color:#5CDB95;
+}
+#loginBut{
+    margin-top:15px;
+    border-radius:5%;
+    background-color: #5CDB95;
+    color:white;
+}

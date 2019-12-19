@@ -11,7 +11,7 @@ const postRoute=require('./routes/post');
 dotenv.config();
 mongoose.connect(process.env.DB_CONNECT,
 {useNewUrlParser:true,useUnifiedTopology:true,family:4},
-(error)=> console.log('connected to DB'+error));
+(error)=> console.log('connected to DB ! error :'+error));
 
 //middlewares
 //cet ligne pour recuper le body en json

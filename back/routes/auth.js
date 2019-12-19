@@ -9,7 +9,6 @@ const nodemailer=require('nodemailer')
 
 router.post('/register',async (req,res)=>{
     //Lets validate data before adding user
-    console.log(req.body)
     // const {error} = registerValidation(req.body);
     // if(error) return res.status(400).send('Erreur'+error.details[0].message);
 
@@ -32,19 +31,20 @@ router.post('/register',async (req,res)=>{
         res.status(400).send(err)
     }
  })
-//password reset
 
+//password reset
 router.post('/reset',async(req,res)=>{
 
     const user = await User.findOne({email:req.body.emailReset})
-    if (!user) return res.status(400).send('Not registered')
+    if (!user) return res.status(400).send('Not registered !')
     const salt= await bcrypt.genSalt(10);
     var val = Math.floor(1000 + Math.random() * 9000);
     const hashPassword = await bcrypt.hash(val.toString(),salt);
     const newUser = new User({
         name:user.name,
         email:user.email,
-        password:hashPassword
+        password:hashPassword,
+        power:user.power
     })
     
     User.deleteOne({email : req.body.emailReset},(err) =>{
@@ -72,10 +72,9 @@ router.post('/reset',async(req,res)=>{
     res.json("good")
 })
 
-
 //LOGIN
 router.post('/login', async (req,res)=>{
-    console.log("rentre"+req.body.password)
+    console.log("rentre dans login")
     const {error} = loginValidation(req.body);
     if(error) return res.status(400).send('Error');
         //Check if email exist in DB
@@ -105,6 +104,5 @@ router.get('/logout', (req, res) => {
         res.sendStatus(400)
     }
 })
-
 
 module.exports = router;

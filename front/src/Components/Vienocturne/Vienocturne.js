@@ -133,9 +133,9 @@ export class Vienocturne extends Component {
             <div>
                 <NavBar />
                 <div id="homeVienocturne">
-                    <h1>Decouvre les meilleurs Restaurants/Bars sur Bruxelles </h1>
+                    <h1>Decouvre les meilleurs endroits pour sortir le soir sur Bruxelles </h1>
                     {(this.state.status ? <div className="addPlace">
-                    <h3>Ajouter un endroit ou sortir la  nuit sur Bruxelles</h3>
+                    <h3>Ajouter un endroit ou sortir le soir sur Bruxelles</h3>
                     <form id="formVienocturne">
                             <label>Titre :</label>
                             <input ref="title" type="name" name="titre" ></input><br></br>

@@ -6,6 +6,9 @@
     flex-wrap:nowrap;
     justify-content: space-between;
 }
+#footer a{
+    color:white;
+}
 #footer img{
     height:100px;
     width:100px;

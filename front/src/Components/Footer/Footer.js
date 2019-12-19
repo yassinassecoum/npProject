@@ -8,7 +8,7 @@ export class Footer extends Component {
             <div>
             <footer  id="footer" >
                 <img src={logo} alt="logo brussels"></img>
-                <p>Copyright Yassin Assecoum</p>
+                <p>Copyright : <a href="https://github.com/yassinassecoum/npProject" target="_blank" rel="noreferer noopener">Yassin Assecoum </a> </p>
                 <ul>
                     <li>Bla</li>
                     <li>Bla</li>

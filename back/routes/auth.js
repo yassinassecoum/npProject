@@ -16,8 +16,6 @@ router.post('/register',async (req,res)=>{
     //Check if user already in DB
     const emailExist = await User.findOne({email:req.body.emailRegister})
     if (emailExist) return res.status(402).send('Email already exists');
-
-
     //Hash password
     const salt= await bcrypt.genSalt(10);
     const hashPassword = await bcrypt.hash(req.body.passwordRegister,salt);
@@ -37,8 +35,7 @@ router.post('/register',async (req,res)=>{
 //password reset
 
 router.post('/reset',async(req,res)=>{
-    
-    console.log(req.body.emailReset)
+
     const user = await User.findOne({email:req.body.emailReset})
     if (!user) return res.status(400).send('Not registered')
     const salt= await bcrypt.genSalt(10);

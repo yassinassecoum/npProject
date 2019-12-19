@@ -1,0 +1,63 @@
+.articles img{
+    height:250px;
+    width:390px;
+    border-radius:5%;
+    opacity:0.7
+}
+#titreArticle{
+    position: absolute;
+    margin-top:-220px;
+    margin-left: 140px;
+}
+.articles img:hover{
+    opacity:1;
+}
+.restaurantsContainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.articles{
+    margin-top: 20px;
+    background-color: #05386B;
+    height:450px;
+    width:400px;
+    border:5px solid black;
+    border-radius: 5%;
+    color:white;
+}
+.articles a{
+    color:red;
+}
+#homeRestaurants{
+    text-align: center;
+    color:white;
+}
+.addPlace{
+    height:400px;
+    width: 600px;
+    background-color: #379683;
+    position:relative;
+    left:500px;
+    border:5px solid  ;
+    border-radius: 5%;
+    color:black
+}
+#formRestaurants input{
+    margin: 15px;
+}
+#error{
+    position:relative;
+    bottom:20px;
+}
+#fork{
+    width:100px;
+    position: relative;
+    top:30px;
+}
+#beer{
+    width:100px;
+    position: relative;
+    top:30px;
+}

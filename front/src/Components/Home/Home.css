@@ -1,0 +1,95 @@
+#title{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    width:500px;
+    z-index:2;
+    text-align: center;
+}
+#black{
+    color:black
+}
+#yellow{
+    color:yellow;
+}
+#red{
+    color:red;
+}
+#home{
+    background-image: linear-gradient(#05386B,#379683,#05386B);
+    
+}
+.article{
+    height:400px;
+    width:400px;
+    border:5px solid #379683;
+    border-radius: 5%;
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:35px;
+}
+
+.article{
+    position:relative;
+    color:white;
+}
+.article:hover > #back{
+    background-color:rgba(0, 0, 0, 0.7);
+}
+.articleHeader{
+    text-align: center;
+    position: relative;
+    text-shadow: 2px 2px black;
+}
+.articleContent{
+    text-align: center;
+    z-index: 5;
+    text-shadow: 2px 2px black;
+    position: relative;
+}
+
+.articleBut{
+    position:relative;
+    top:150px;
+    left:10px;
+    height:50px;
+    background-color:#379683;
+    color:white;
+    border:none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 16px;
+    border-radius: 10%;
+}
+.articleBut:hover{
+    opacity:0.8;
+}
+#firstArt{
+    background-image: url('https://s3-eu-west-1.amazonaws.com/brussels-images/content/gallery/visit/article/winter/2019-2020/winter-brussels-2019-2020_sq_640.jpg');
+    background-size: contain;
+}
+#secondArt{
+    background-image: url('https://s3-eu-west-1.amazonaws.com/brussels-images/content/gallery/visit/links/brusselicious-2019_sq_320.jpg');
+    background-size: contain;
+}
+#thirdArt{
+    background-image: url('https://s3-eu-west-1.amazonaws.com/brussels-images/content/gallery/visit/article/bieres-bruxelloises-noel/bieres-bruxelloises-noel-3_sq_640.jpg');
+    background-size: contain;
+}
+#back{
+    position: absolute;
+    height:100%;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.4);
+    top:0;
+    left:0;
+
+}
+#meteo{
+    text-align: center;
+    color:white;
+}

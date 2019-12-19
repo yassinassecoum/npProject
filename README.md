@@ -10,9 +10,12 @@ There is also an Admin rights who can remove / edit all the posts.
 
 ## Built with
 
-To create this website I used : React for the Front-end and Node.js / Express / MongoDB for the Back-end.
+To create this website I used :
 
+- React for the Front-end
+- Node.js / Express / MongoDB for the Back-end.
 
+## Created by
 
 * **Assecoum, Yassin** - [yassinassecoum](https://github.com/yassinassecoum)
 

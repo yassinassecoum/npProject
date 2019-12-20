@@ -14,6 +14,7 @@ To create this website I used :
 
 - React for the Front-end
 - Node.js / Express / MongoDB for the Back-end.
+- Weather API 
 
 ## Created by
 
